@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Should I Do? · Activity Suggester</title>
+  <link rel="preconnect" href="https://bored-api.appbrewery.com" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <h1>What should I do?</h1>
+      <p class="subtitle">Beat boredom with a fresh activity suggestion.</p>
+    </header>
+
+    <section class="filters" aria-label="Filters">
+      <div class="field">
+        <label for="type">Type</label>
+        <select id="type">
+          <option value="">Any</option>
+          <option value="education">Education</option>
+          <option value="recreational">Recreational</option>
+          <option value="social">Social</option>
+          <option value="diy">DIY</option>
+          <option value="charity">Charity</option>
+          <option value="cooking">Cooking</option>
+          <option value="relaxation">Relaxation</option>
+          <option value="music">Music</option>
+          <option value="busywork">Busywork</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="participants">Participants</label>
+        <select id="participants">
+          <option value="">Any</option>
+          <option value="1">1 (solo)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="8">8</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="price">Max cost</label>
+        <select id="price">
+          <option value="">Any</option>
+          <option value="0">Free</option>
+          <option value="0.3">Cheap</option>
+          <option value="0.6">Moderate</option>
+          <option value="1">Any budget</option>
+        </select>
+      </div>
+    </section>
+
+    <button id="suggestBtn" class="suggest-btn" type="button">
+      Suggest an activity
+    </button>
+
+    <section id="result" class="result" aria-live="polite">
+      <div class="placeholder">Pick your filters (or not) and hit the button!</div>
+    </section>
+  </main>
+
+  <footer class="credit">
+    Powered by the
+    <a href="https://bored-api.appbrewery.com" target="_blank" rel="noopener noreferrer">Bored API</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
